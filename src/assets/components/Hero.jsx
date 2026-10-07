@@ -4,12 +4,8 @@ const Hero = () => {
   return (
     <div>
       <div className="hero text-black min-h-screen">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <img
-            alt="Tailwind CSS hero component"
-            src="/public/banner-stack.png"
-            className="max-w-sm rounded-lg shadow-2xl"
-          />
+        <div className="hero-content flex-col lg:flex-row">
+          
           <div>
             <h1 className="text-5xl font-bold">
               Build Your Ideal <br></br>
@@ -23,8 +19,16 @@ const Hero = () => {
               them side by side, and put together the stack that fits your next
               project.
             </p>
-            <button className="btn btn-primary">Get Started</button>
+            <div className="flex gap-4">
+                <button className="btn bg-linear-to-r border-none from-amber-600 to-pink-600">Explore Technologies</button>
+            <button className="btn w-40 text-black bg-white">Learn More</button>
+            </div>
           </div>
+          <img
+            alt="Tailwind CSS hero component"
+            src="/public/banner-stack.png"
+            className="max-w-sm rounded-lg shadow-2xl"
+          />
         </div>
       </div>
     </div>
