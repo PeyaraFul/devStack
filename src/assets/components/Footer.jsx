@@ -9,6 +9,11 @@ const Footer = () => {
             <br />
             developers building modern software.
           </p>
+          <div className="flex gap-6 font-semibold cursor-pointer underline">
+            <a>Github</a>
+            <a>Twitter</a>
+            <a>LinkedIn</a>
+          </div>
         </aside>
         <nav>
           <h6 className="footer-title">Product</h6>
@@ -27,7 +32,12 @@ const Footer = () => {
           <a className="link link-hover">Terms of service</a>
           <a className="link link-hover">Privacy policy</a>
         </nav>
+        
       </footer>
+      <div className="mt-15 text-black p-4 flex justify-between">
+          <p>Copyright © 2023 - All right reserved by Devstack</p>
+          <a className="link">Terms of service</a>
+        </div>
     </div>
   );
 };
