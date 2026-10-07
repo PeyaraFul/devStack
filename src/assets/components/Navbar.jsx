@@ -48,7 +48,7 @@ const Navbar = () => {
         </div>
         <div className="">
           <img
-            src="/public/devstack-logo.png"
+            src="../public/devstack-logo.png"
             alt="devStack logo"
             className="h-8 w-auto"
           />

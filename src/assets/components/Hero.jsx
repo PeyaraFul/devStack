@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
           <img
             alt="Tailwind CSS hero component"
-            src="/public/banner-stack.png"
+            src="../public/banner-stack.png"
             className="max-w-sm rounded-lg shadow-2xl"
           />
         </div>
