@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
+import GradientText from "./GradientText";
 
 const technologies = async () => {
   const response = await fetch("/technologies.json");
@@ -51,7 +52,7 @@ const ExploreTec = () => {
     <>
       <h1 className="text-3xl font-bold mt-10 text-black">
         Explore the{" "}
-        <span className="bg-transparent bg-linear-to-r from-pink-600 to-purple-500 bg-clip-text text-transparent">
+        <span className={GradientText}>
           Technologies{" "}
         </span>
       </h1>

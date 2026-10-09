@@ -1,4 +1,5 @@
-import React from "react";
+import GradientText from "./GradientText";
+
 
 const Hero = () => {
   return (
@@ -9,7 +10,8 @@ const Hero = () => {
           <div>
             <h1 className="text-5xl font-bold">
               Build Your Ideal <br></br>
-              <span className="bg-transparent  bg-linear-to-r from-pink-600 to-purple-500 bg-clip-text text-transparent">
+              <span className={GradientText}>
+              {/* <span className="bg-transparent  bg-linear-to-r from-pink-600 to-purple-500 bg-clip-text text-transparent"> */}
                 {" "}
                 Development Stack
               </span>
