@@ -4,7 +4,7 @@ import GradientText from "./GradientText";
 const Hero = () => {
   return (
     <div>
-      <div className="hero text-black min-h-screen">
+      <div className="hero text-black">
         <div className="hero-content flex-col lg:flex-row">
           
           <div>
