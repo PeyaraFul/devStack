@@ -1,4 +1,5 @@
 
+import { ToastContainer } from 'react-toastify'
 import './App.css'
 import ExploreTec from './assets/components/ExploreTec'
 import Footer from './assets/components/Footer'
@@ -10,7 +11,7 @@ function App() {
   return (
     <>
       
-    
+    <ToastContainer></ToastContainer>
       <Navbar></Navbar>
       <Hero></Hero>
       <ExploreTec></ExploreTec>
