@@ -3,7 +3,7 @@ const Footer = () => {
     <div>
       <footer className="footer sm:footer-horizontal text-black text-base-content p-10">
         <aside>
-          <img src="/public/devstack-logo.png" alt="devstack logo" />
+          <img src="/devstack-logo.png" alt="devstack logo" />
           <p>
             Curated tools, technologies, and resources for
             <br />
