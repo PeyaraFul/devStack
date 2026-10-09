@@ -2,9 +2,13 @@ import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import GradientText from "./GradientText";
 
+
+let loading = true;
 const technologies = async () => {
+  loading = true;
   const response = await fetch("/technologies.json");
   const data = await response.json();
+  loading = false;
   // console.log('Technologies:', data);
   return data;
 };
@@ -60,6 +64,11 @@ const ExploreTec = () => {
         Pick one technology per category to build your ideal stack.
       </p>
       <div className="md:flex justify-space-between  gap-4">
+
+        {loading? (
+          <span className="loading loading-spinner text-accent"></span>
+        ) : (
+       <>
         {/* explore technologies */}
         <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4">
           {data.map((technology) => (
@@ -100,7 +109,8 @@ const ExploreTec = () => {
             </div>
           ))}
         </div>
-
+          </>
+        )}
         {/* your stack */}
         <div className="text-black sm: w-full shadow-lg md:w-2/3 border-amber-400 p-2 max-w-2xl px-4">
           <h1 className="text-2xl font-bold text-black">Your Stack</h1>
